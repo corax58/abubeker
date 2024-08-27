@@ -1,17 +1,17 @@
-import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
-import React from "react";
-import { gridItems } from "@/data";
-import Image from "next/image";
-import FullImage from "@/public/fullimage2.jpg";
-import communication from "@/public/communication.svg";
-import Globalization from "@/public/Globalization.png";
-import Art from "@/public/art.png";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import Art from "@/public/art.png";
+import communication from "@/public/communication.svg";
+import FullImage from "@/public/fullimage2.jpg";
+import Globalization from "@/public/Globalization.png";
+import Image from "next/image";
 import CopyButton from "./CopyButton";
 const AboutMe = () => {
-  const card = "rounded-xl border-2 border-secondary text-opacity-50 ";
+  const card = "rounded-xl  text-opacity-50 ";
   return (
-    <section className="mt-32 md:mt-0 w-full flex flex-col items-center  xl:px-20">
+    <section
+      id="about-me"
+      className="mt-32 md:mt-0 w-full flex flex-col items-center  xl:px-20"
+    >
       <div>
         <p className="text-3xl text-white  mb-10">About me</p>
       </div>
@@ -26,6 +26,7 @@ const AboutMe = () => {
             enjoy exploring art, music, and collaborative projects.
           </div>
         </div>
+
         <div className=" col-span-1 row-span-2 h-full  bg-blue-600 rounded-xl overflow-clip w-full">
           <div className="relative w-full h-full ">
             <Image
@@ -37,7 +38,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div
-          className={`  ${card} bg-gradient-to-r from-indigo-800 to-violet-900 flex items-center space-x-2 p-4 pb-0 pr-0 h-full`}
+          className={`  ${card} bg-gradient-to-r from-indigo-800 to-violet-900  flex items-center space-x-2 p-4 pb-0 pr-0 h-full`}
         >
           <div className=" w-1/3 h-full text-left">
             I <br /> prioritize <br />
@@ -70,7 +71,7 @@ const AboutMe = () => {
         </div>
         <div className=" inner-grid col-span-full grid  grid-cols-1  h-full md:grid-cols-2 gap-5">
           <div
-            className={`  ${card} col-span-1 bg-green-400   h-40 overflow-hidden w-full`}
+            className={`  ${card} col-span-1 bg-violet-800   h-40 overflow-hidden w-full`}
           >
             <BackgroundGradientAnimation className=" h-full">
               <div className="z-50 font-bold text-lg flex flex-col p-8 text-center justify-center space-y-4 items-center h-full spa ">

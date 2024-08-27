@@ -65,42 +65,63 @@ export const gridItems = [
 export const tools = [
   {
     name: "Javascript",
-    img: "@/public/icons/javascript.svg",
+    img: "../Icons/javascript.svg",
   },
   {
     name: "Typescript",
-    img: "@/public/icons/typescript.svg",
+    img: "../Icons/typescript.svg",
   },
   {
     name: "Python",
-    img: "@/public/icons/python.svg",
+    img: "../Icons/python.svg",
   },
   {
     name: "Reactjs",
-    img: "@/public/icons/react.svg",
+    img: "../icons/react.svg",
   },
   {
     name: "NextJs",
-    img: "@/public/icons/nextjs.svg",
+    img: "../Icons/nextjs.svg",
   },
   {
     name: "ExpressJs",
-    img: "@/public/icons/expressjs.png",
+    img: "../Icons/expressjs.png",
   },
   {
     name: "Nodejs",
-    img: "@/public/icons/nodejs.svg",
+    img: "../Icons/nodejs.svg",
   },
   {
     name: "MongoDb",
-    img: "@/public/icons/mongodb",
+    img: "../Icons/mongodb.svg",
   },
   {
     name: "Postgresql",
-    img: "@/public/icons/postgresql.svg",
+    img: "../Icons/postgresql.svg",
   },
   {
     name: "Mysql",
-    img: "@/public/icons/mysql.svg",
+    img: "../Icons/mysql.svg",
+  },
+];
+
+export const ProjectsList = [
+  {
+    id: 1,
+    Title: "Camper",
+    Description: "Beautiful Landing page for a travel website",
+    Stack: ["Reactjs", "Nodejs"],
+    img: "../camper.jpg",
+    Link: "https://camper-lime.vercel.app/",
+    Github: "https://github.com/corax58/Camper",
+  },
+  {
+    id: 2,
+    Title: "Pico",
+    Description: "Aesthetic image sharing platform",
+    Stack: ["React", "Expressjs", "MongoDb", "Nodejs"],
+    img: "../Pico.jpg",
+    Link: "https://pico-self-five.vercel.app/",
+    Github: "https://github.com/corax58/Pico",
   },
 ];

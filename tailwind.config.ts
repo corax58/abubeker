@@ -22,6 +22,9 @@ const config: Config = {
         primary: "#10123F",
 
         secondary: "#222447",
+        third: "#323571",
+        forth: "#584CA9",
+        fifth: "#473B97",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

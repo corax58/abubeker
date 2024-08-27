@@ -2,6 +2,7 @@ import React from "react";
 import Glow from "./Glow";
 import ProfileImage from "../../public/profile.jpg";
 import Image from "next/image";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 const Hero = () => {
   return (
@@ -13,11 +14,16 @@ const Hero = () => {
         <Glow color=" bg-violet-500" />
       </div>
 
-      <div className=" pt-28 md:pt-0   flex  flex-col-reverse md:flex-row justify-center items-center w-full h-screen px-5 sm:space-x-10 md:px-12 lg:space-x-20 lg:px-16  xl:px-36 xl:space-x-48">
+      <div className=" pt-28 md:pt-0  font  flex  flex-col-reverse md:flex-row justify-center items-center w-full h-screen px-5 sm:space-x-10 md:px-12 lg:space-x-20 lg:px-16  xl:px-36 xl:space-x-48">
         <div className="text-white space-y-5">
           <div className=" text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold">
             <p>HI,</p>
-            <p> I'm Abubeker,</p> <p>Web developer </p>
+            <p> I'm Abubeker,</p>
+
+            <TypewriterEffect
+              className=" p-0 w-max text-4xl sm:text-5xl lg:text-6xl xl:text-7xl "
+              words={[{ text: "Web" }, { text: "Developer" }]}
+            />
           </div>
 
           <p className=" text-lg text-justify">
