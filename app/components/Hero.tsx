@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="text-white space-y-5">
           <div className=" text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold">
             <p>HI,</p>
-            <p> I'm Abubeker,</p>
+            <p> I&apos;m Abubeker,</p>
 
             <TypewriterEffect
               className=" p-0 w-max text-4xl sm:text-5xl lg:text-6xl xl:text-7xl "
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
 
           <p className=" text-lg text-justify">
-            I'm Abubeker, a full stack web developer from
+            I&apos;m Abubeker, a full stack web developer from
             <span className="font-bold ">
               <span className="text-[#41C056]"> Eth</span>
               <span className="text-[#CCC85A]">io</span>

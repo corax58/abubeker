@@ -20,7 +20,7 @@ const AboutMe = () => {
           className={`   ${card} bg-indigo-900   font-sans col-span-2 text-lg md:text-xl  flex items-center justify-center px-4 py-2 md:px-4 md:py-4  text-justify`}
         >
           <div className=" ">
-            Hi, I &apos m Abubeker Abduljelil, a full-stack web developer from
+            Hi, I&apos;m Abubeker Abduljelil, a full-stack web developer from
             Ethiopia with a degree in Computer Science. I love combining art and
             technology to create dynamic web applications. Outside of coding, I
             enjoy exploring art, music, and collaborative projects.
