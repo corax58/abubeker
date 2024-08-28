@@ -26,11 +26,11 @@ const Navbar = () => {
         window.removeEventListener("scroll", controlNavbar);
       };
     }
-  }, [lastScrollY]);
+  }, [lastScrollY, controlNavbar]);
   return (
     <nav
-      className={`fixed w-full  h-12 mt-2 z-50 transition-all  ${
-        isVisible ? "translate-y-0 " : "-translate-y-full mt-0"
+      className={`fixed w-full  h-12 mt-2 z-50 transition-all duration-300 ${
+        isVisible ? "translate-y-0 " : "-translate-y-full -mt-4"
       }`}
     >
       <div className="h-full z-50 flex justify-center">
