@@ -22,11 +22,21 @@ const ProjectCard = ({
       <div className="  h-px bg-secondary w-full"></div>
       <p className=" w-full font-extralight text-sm">{Description}</p>
       <div className=" text-white flex space-x-3">
-        <a href={Link} className="bg-secondary rounded-full p-2">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={Link}
+          className="bg-secondary rounded-full p-2"
+        >
           {" "}
           <IconLink />
         </a>
-        <a href={Github} className="bg-secondary rounded-full p-2 ">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={Github}
+          className="bg-secondary rounded-full p-2 "
+        >
           <IconBrandGithub />
         </a>
       </div>

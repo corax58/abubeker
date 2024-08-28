@@ -30,16 +30,32 @@ const ContactMe = () => {
           </div>
         </div>
         <div className="flex space-x-4">
-          <a href="https://github.com/corax58">
+          <a
+            href="https://github.com/corax58"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconBrandGithub />
           </a>
-          <a href="https://t.me/Ccoraxx">
+          <a
+            href="https://t.me/Ccoraxx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconBrandTelegram />
           </a>
-          <a href="https://www.linkedin.com/in/abubeker-abduljelil-85795b315/">
+          <a
+            href="https://www.linkedin.com/in/abubeker-abduljelil-85795b315/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconBrandLinkedin />
           </a>
-          <a href="https://www.instagram.com/corax5888/">
+          <a
+            href="https://www.instagram.com/corax5888/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconBrandInstagram />
           </a>
         </div>

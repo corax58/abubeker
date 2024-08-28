@@ -121,7 +121,7 @@ export const ProjectsList = [
     Description: "Aesthetic image sharing platform",
     Stack: ["React", "Expressjs", "MongoDb", "Nodejs"],
     img: "../Pico.jpg",
-    Link: "https://pico-self-five.vercel.app/",
+    Link: "https://pico-self-fives.vercel.app/",
     Github: "https://github.com/corax58/Pico",
   },
 ];
