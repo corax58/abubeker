@@ -17,7 +17,11 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <div className="h-max hover:scale-105  duration-300 ease-in-out hover:shadow-2xl mb-10 text-white  w-full  bg-primary border-secondary border-2  from-indigo-800 to-violet-800 hover:from-violet-800 hover:to-indigo-800 transition-all   flex flex-col  rounded-lg p-4 space-y-2">
-      <img src={img} alt="project image" className="rounded-md" />
+      <img
+        src={img}
+        alt="project image"
+        className="rounded-md h-52 lg:h-60 xl:h-72 bg-red-300 object-cover w-full"
+      />
       <p className=" text-xl font-semibold">{Title}</p>
       <div className="  h-px bg-secondary w-full"></div>
       <p className=" w-full font-extralight text-sm">{Description}</p>

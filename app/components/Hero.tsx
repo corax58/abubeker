@@ -21,13 +21,14 @@ const Hero = () => {
             <p> I&apos;m Abubeker,</p>
 
             <TypewriterEffect
-              className=" p-0 w-max text-4xl sm:text-5xl lg:text-6xl xl:text-7xl "
+              className=" p-0 w-max text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white"
               words={[{ text: "Web" }, { text: "Developer" }]}
             />
           </div>
 
           <p className=" text-lg text-justify">
-            I&apos;m Abubeker, a full stack web developer from
+            I&apos;m Abubeker, a full stack web developer and a web desinger
+            from
             <span className="font-bold ">
               <span className="text-[#41C056]"> Eth</span>
               <span className="text-[#CCC85A]">io</span>
