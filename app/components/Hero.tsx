@@ -27,15 +27,9 @@ const Hero = () => {
           </div>
 
           <p className=" text-lg text-justify">
-            I&apos;m Abubeker, a full stack web developer and a web desinger
-            from
-            <span className="font-bold ">
-              <span className="text-[#41C056]"> Eth</span>
-              <span className="text-[#CCC85A]">io</span>
-              <span className="text-[#FE7070]">pia</span>
-            </span>
-            . I craft innovative, user-friendly web solutions with expertise in
-            both front-end and back-end technologies.
+            I&apos;m Abubeker, a full stack web developer and a web desinger . I
+            craft innovative, user-friendly web solutions with expertise in both
+            front-end and back-end technologies.
           </p>
         </div>
         <div className=" flex items-center justify-center">
