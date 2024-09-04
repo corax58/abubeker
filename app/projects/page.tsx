@@ -8,8 +8,8 @@ const ProjectsPage = () => {
   const [search, setSearch] = useState<string>("");
   const filteredList = ProjectsList.filter(
     (item) =>
-      item.Title.toLowerCase().includes(search) ||
-      item.Title.toLowerCase().includes(search)
+      item.Title.toLowerCase().includes(search.toLowerCase()) ||
+      item.Title.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
