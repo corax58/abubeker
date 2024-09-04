@@ -4,7 +4,7 @@ import Glow from "../components/Glow";
 import { ProjectsList } from "@/data";
 import ProjectCard from "../components/ProjectCard";
 
-const page = () => {
+const ProjectsPage = () => {
   const [search, setSearch] = useState<string>("");
   const filteredList = ProjectsList.filter(
     (item) =>
@@ -43,4 +43,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProjectsPage;
