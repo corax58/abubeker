@@ -118,6 +118,16 @@ export const ProjectsList = [
   },
   {
     id: 2,
+    Title: "Unique",
+    Description: "Modern animated landing page for a car rental company",
+    Stack: ["Reactjs", "Nodejs"],
+    img: "../project_Pictures/unique.jpg",
+    Link: "https://learn-framer-sandy.vercel.app/",
+    Github: "https://github.com/corax58/learn-framer",
+    
+  },
+  {
+    id: 3,
     Title: "Camper",
     Description: "Beautiful Landing page for a travel website",
     Stack: ["Reactjs", "Nodejs"],
@@ -126,7 +136,7 @@ export const ProjectsList = [
     Github: "https://github.com/corax58/Camper",
   },
   {
-    id: 3,
+    id: 4,
     Title: "Pico",
     Description: "Aesthetic image sharing platform",
     Stack: ["React", "Expressjs", "MongoDb", "Nodejs"],
@@ -135,7 +145,7 @@ export const ProjectsList = [
     Github: "https://github.com/corax58/Pico",
   },
   {
-    id: 4,
+    id: 5,
     Title: "Portfolio website",
     Description: "Minimalistic and beautiful website to showcase my projects",
     Stack: ["NextJs"],
@@ -145,7 +155,7 @@ export const ProjectsList = [
   },
 
   {
-    id: 5,
+    id: 6,
     Title: "Gratch",
     Description:
       "A web app for watching and chatting with yourfriends at the same time.",
@@ -155,7 +165,7 @@ export const ProjectsList = [
     Github: "https://github.com/corax58/gratch",
   },
   {
-    id: 6,
+    id: 7,
     Title: "Fakebook",
     Description:
       "Minisocial media inspired by facebook for posting text-based content. ",
@@ -165,7 +175,7 @@ export const ProjectsList = [
     Github: "https://github.com/corax58/fakebook",
   },
   {
-    id: 7,
+    id: 8,
     Title: "Anime Land",
     Description: "A website for exploring different anime series and movies.",
     Stack: ["React"],
