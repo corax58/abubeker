@@ -124,19 +124,27 @@ export const ProjectsList = [
     img: "../project_Pictures/unique.jpg",
     Link: "https://learn-framer-sandy.vercel.app/",
     Github: "https://github.com/corax58/learn-framer",
-    
   },
   {
     id: 3,
     Title: "Camper",
     Description: "Beautiful Landing page for a travel website",
-    Stack: ["Reactjs", "Nodejs"],
+    Stack: ["Reactjs"],
     img: "../project_Pictures/camper.jpg",
     Link: "https://camper-lime.vercel.app/",
     Github: "https://github.com/corax58/Camper",
   },
   {
     id: 4,
+    Title: "Game dashboard",
+    Description: "A beautiful dashboard for a games",
+    Stack: ["NextJs"],
+    img: "../project_Pictures/game_dashboard.png",
+    Link: "https://game-dashboard-rho.vercel.app/",
+    Github: "https://github.com/corax58/ui-test",
+  },
+  {
+    id: 5,
     Title: "Pico",
     Description: "Aesthetic image sharing platform",
     Stack: ["React", "Expressjs", "MongoDb", "Nodejs"],
@@ -145,7 +153,7 @@ export const ProjectsList = [
     Github: "https://github.com/corax58/Pico",
   },
   {
-    id: 5,
+    id: 6,
     Title: "Portfolio website",
     Description: "Minimalistic and beautiful website to showcase my projects",
     Stack: ["NextJs"],
@@ -155,7 +163,7 @@ export const ProjectsList = [
   },
 
   {
-    id: 6,
+    id: 7,
     Title: "Gratch",
     Description:
       "A web app for watching and chatting with yourfriends at the same time.",
@@ -165,7 +173,7 @@ export const ProjectsList = [
     Github: "https://github.com/corax58/gratch",
   },
   {
-    id: 7,
+    id: 8,
     Title: "Fakebook",
     Description:
       "Minisocial media inspired by facebook for posting text-based content. ",
@@ -175,7 +183,7 @@ export const ProjectsList = [
     Github: "https://github.com/corax58/fakebook",
   },
   {
-    id: 8,
+    id: 9,
     Title: "Anime Land",
     Description: "A website for exploring different anime series and movies.",
     Stack: ["React"],

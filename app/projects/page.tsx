@@ -13,7 +13,7 @@ const ProjectsPage = () => {
   );
 
   return (
-    <div className="w-screen">
+    <div className="w-full">
       <div className="-z-50 absolute  -ml-40 -mt-40 ">
         <Glow color="bg-sky-300" />
       </div>
