@@ -91,7 +91,7 @@ const AboutMe = () => {
                   <Image
                     src={Art}
                     alt="Tech and art"
-                    className="w-3/4 lg:w-2/3 h-4/5 lg:h-full  object-fill"
+                    className="w-min lg:w-min h-4/5 lg:h-full  object-fill"
                   ></Image>
                 </div>
               </div>

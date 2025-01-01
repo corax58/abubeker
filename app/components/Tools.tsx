@@ -9,7 +9,7 @@ const Tools = () => {
         <p className=" text-3xl text-white  mb-10 ">My tools</p>
       </div>
 
-      <div className="grid grid-cols-3 md:grid-cols-5 gap-5 w-full ">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-5 w-full  ">
         {tools.map((tool, i) => (
           <div
             key={i}
@@ -26,7 +26,7 @@ const Tools = () => {
                 src={tool.img}
                 alt={tool.name}
                 className={classNames({
-                  " w-full h-full   hover:rotate-[20deg]  transition-all  overflow-hidden":
+                  " w-full h-full    hover:rotate-[20deg]  transition-all  overflow-hidden":
                     true,
                   "  rounded  ": tool.name == "Javascript",
                   "  rounded": tool.name == "Typescript",
