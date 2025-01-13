@@ -76,7 +76,7 @@ const AboutMe = () => {
                 <Image
                   src={Art}
                   alt="Tech and art"
-                  className="w-min lg:w-min h-4/5 lg:h-full  object-fill"
+                  className="w-min opacity-50 md:opacity-100 lg:w-min h-4/5 lg:h-full  object-fill"
                 ></Image>
               </div>
             </div>
