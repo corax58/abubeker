@@ -6,7 +6,7 @@ import Globalization from "@/public/Globalization.png";
 import Image from "next/image";
 import CopyButton from "./CopyButton";
 const AboutMe = () => {
-  const card = "rounded-xl border-[#393152] border   ";
+  const card = "rounded-xl border-third border   ";
   return (
     <section
       id="about-me"
@@ -76,7 +76,7 @@ const AboutMe = () => {
                 <Image
                   src={Art}
                   alt="Tech and art"
-                  className="w-min opacity-50 md:opacity-100 lg:w-min h-4/5 lg:h-full  object-fill"
+                  className=" opacity-50 md:opacity-100 w-min  h-4/5 lg:h-full  object-contain"
                 ></Image>
               </div>
             </div>
