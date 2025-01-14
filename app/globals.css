@@ -27,25 +27,3 @@ body {
     text-wrap: balance;
   }
 }
-
-.inner-grid {
-  width: 100%;
-}
-
-@media (width <= 426px) {
-  .inner-grid {
-    width: 385px;
-  }
-}
-
-@media (width <= 376px) {
-  .inner-grid {
-    width: 335px;
-  }
-}
-
-@media (max-width: 320px) {
-  .inner-grid {
-    width: 280px;
-  }
-}

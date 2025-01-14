@@ -30,8 +30,8 @@ const ProjectsPage = () => {
           }}
         />
       </div>
-      <div className=" pt-12  px-10 lg:px-16 xl:px-32">
-        <div className="  grid grid-cols-1 md:grid-cols-2 gap-5  justify-between w-full ">
+      <div className=" pt-12  px-4  md:px-10 lg:px-16 xl:px-32">
+        <div className="  flex flex-col gap-5  w-full ">
           {filteredList.map((Project) => (
             <div className="flex w-full justify-center" key={Project.id}>
               <ProjectCard Project={Project} />
