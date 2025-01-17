@@ -15,29 +15,27 @@ export interface Props {
 }
 
 const ProjectCard = ({
-  Project: { Title, Description, Stack, img, Link, Github },
+  Project: { id, Title, Description, Stack, img, Link, Github },
 }: Props) => {
   return (
-    <div className="h-max  flex flex-col items-center lg:flex-row gap-5 ease-in-out shadow-xl mb-10 text-white  w-full  bg-gradient-to-r  from-primary  to-[#00023a] border-third border  transition-all  rounded-lg p-4 space-y-2">
-      <img
-        src={img}
-        alt="project image"
-        className="rounded-md  h-44 md:h-64  w-full lg:w-1/2 object-cover "
-      />
-      <div className=" flex flex-col w-full  justify-between ">
+    <div className=" h-max lg:h-[300px]  flex flex-col items-center lg:flex-row gap-5 ease-in-out shadow-xl mb-10 text-white  w-full  bg-gradient-to-r  from-primary  to-[#00023a] border-third border  transition-all  rounded-lg p-4 space-y-2">
+      <a
+        href={`/projects/${id}`}
+        className=" w-full h-max bg-blue-900 rounded-md"
+      >
+        <img
+          src={img}
+          alt="project image"
+          className="rounded-md  h-44 md:h-64  w-full  transition-all hover:object-contain object-cover "
+        />
+      </a>
+      <div className=" flex flex-col w-full h-full justify-between ">
         <div className=" flex flex-col gap-2">
-          <p className=" text-3xl font-medium">{Title}</p>
+          <a href={`/projects/${id}`}>
+            <p className=" hover:underline text-3xl font-medium">{Title}</p>
+          </a>
           <div className="  h-px bg-secondary w-full"></div>
-          <p className=" w-full font-extralight  line-clamp-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum
-            veritatis magnam, delectus minus cupiditate illum possimus placeat,
-            eius accusantium, quas vero reprehenderit. Voluptatibus assumenda
-            maiores cum ipsa beatae consequuntur? Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quod, veritatis? Eligendi, laboriosam
-            sapiente reprehenderit, veniam praesentium aliquid officia atque
-            voluptate velit, ad vitae autem cupiditate culpa nostrum totam.
-            Saepe, fugit?
-          </p>
+          <p className=" w-full font-extralight  line-clamp-4">{Description}</p>
         </div>
         <div className=" flex flex-col mt-5 gap-2">
           <div className=" flex w-full flex-wrap  -space-x-3  ">

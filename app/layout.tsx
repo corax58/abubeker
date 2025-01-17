@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
+import Glow from "./components/Glow";
 
 export const metadata: Metadata = {
   title: "Abubeker's Portfolio",
@@ -42,6 +43,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <div className=" fixed top-0 w-screen -z-50 h-screen">
+          <div className="h-screen w-sreen   bg-dot-violet-600/[0.2]  relative flex items-center justify-center"></div>
+        </div>
+        <div className="-z-50 absolute  -ml-40 -mt-40 ">
+          <Glow color="bg-sky-300" />
+        </div>
+        <div className="-z-50 absolute right-0 -mt-64">
+          <Glow color=" bg-violet-500" />
+        </div>
         <Navbar />
         <main>{children}</main>
       </body>

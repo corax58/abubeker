@@ -14,12 +14,6 @@ const ProjectsPage = () => {
 
   return (
     <div className="w-full">
-      <div className="-z-50 absolute  -ml-40 -mt-40 ">
-        <Glow color="bg-sky-300" />
-      </div>
-      <div className="-z-50 absolute right-0 -mt-64 ">
-        <Glow color=" bg-violet-500" />
-      </div>
       <div className="w-full h-2"></div>
       <div className="w-full flex mt-16  justify-center">
         <input
