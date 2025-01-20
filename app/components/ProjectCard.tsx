@@ -26,7 +26,7 @@ const ProjectCard = ({
         <img
           src={img}
           alt="project image"
-          className="rounded-md  h-44 md:h-64  w-full  transition-all hover:object-contain object-cover "
+          className="rounded-md  h-44 md:h-64  w-full  transition-all  object-cover "
         />
       </a>
       <div className=" flex flex-col w-full h-full justify-between ">
