@@ -56,6 +56,7 @@ export const tools = [
 export const ProjectsList: {
   id: number;
   Title: string;
+  Tags: "Static" | "Full-Stack" | "Frontend" | "Other";
   Description: string;
   Stack: number[];
   Images: string[];
@@ -67,9 +68,11 @@ export const ProjectsList: {
   {
     id: 0,
     Title: "Optima",
+    Tags: "Full-Stack",
     Description:
       "Comprehensive web app for tracking habits and managing projects. ",
     Stack: [3, 5, 6, 8],
+
     Images: [],
     Details: "",
 
@@ -80,6 +83,7 @@ export const ProjectsList: {
   {
     id: 1,
     Title: "Unique",
+    Tags: "Static",
     Description:
       "Unique is a sleek, mobile-responsive car rental website featuring smooth Framer Motion animations. Built with React.js, TypeScript, and Vite, it ensures speed and style.",
     Details: `# Unique
@@ -127,6 +131,7 @@ Check out the live demo here: [Unique](https://learn-framer-sandy.vercel.app/)
   {
     id: 2,
     Title: "Camper",
+    Tags: "Static",
     Description:
       "Camper is a sleek, mobile-responsive landing page for a travel agency. Built with React, it features a clean design and seamless user experience.",
     Stack: [3],
@@ -154,6 +159,7 @@ Explore Camper and see the design live: [Camper](https://camper-lime.vercel.app/
   {
     id: 3,
     Title: "Game dashboard",
+    Tags: "Frontend",
     Description:
       "a Game Dashboard thats is a sleek, responsive interface for managing gaming data. Built with Next.js and Tailwind CSS, it ensures high performance and modern design.",
     Stack: [4],
@@ -175,20 +181,11 @@ Experience the dashboard live: [https://game-dashboard-rho.vercel.app/](https://
     Link: "https://game-dashboard-rho.vercel.app/",
     Github: "https://github.com/corax58/ui-test",
   },
+
   {
     id: 4,
-    Title: "Pico",
-    Description: "Aesthetic image sharing platform",
-    Stack: [3, 5, 6, 7],
-    Images: [],
-    Details: "",
-    img: "../project_Pictures/Pico.jpg",
-    Link: "/projects",
-    Github: "https://github.com/corax58/Pico",
-  },
-  {
-    id: 5,
     Title: "Portfolio website",
+    Tags: "Frontend",
     Description:
       "My portfolio Website is a sleek, modern platform built with Next.js and Tailwind CSS to showcase projects and skills. It's fast, responsive, and visually stunning.",
     Stack: [4],
@@ -222,22 +219,10 @@ Experience the dashboard live: [https://game-dashboard-rho.vercel.app/](https://
     Link: "https://abubeker-portfolio.vercel.app/",
     Github: "https://github.com/corax58/abubeker",
   },
-
   {
-    id: 6,
-    Title: "Gratch",
-    Description:
-      "A web app for watching and chatting with your friends at the same time.",
-    Stack: [3, 5],
-    Images: [],
-    Details: "",
-    img: "../project_Pictures/gratch.png",
-    Link: "",
-    Github: "https://github.com/corax58/gratch",
-  },
-  {
-    id: 7,
+    id: 5,
     Title: "Fakebook",
+    Tags: "Full-Stack",
     Description:
       "A lightweight, mobile-responsive Facebook clone. It supports text-based posts, post searching, and account management, offering a simple and functional user experience. ",
     Stack: [3, 5, 6, 7],
@@ -276,8 +261,9 @@ Fakebook is a lightweight and mobile-responsive **Facebook clone** designed for 
     Github: "https://github.com/corax58/fakebook",
   },
   {
-    id: 8,
+    id: 6,
     Title: "Anime Land",
+    Tags: "Frontend",
     Description:
       "Anime Land is a mobile-responsive website for discovering anime. It features powerful search functionality and detailed information for anime enthusiasts.",
     Stack: [3],
