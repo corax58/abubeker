@@ -1,7 +1,7 @@
 export type Project = {
   id: number;
   Title: string;
-  Tag: "Static" | "Full-Stack" | "Frontend" | "Other";
+  Tag: Tags;
   Description: string;
   Stack: number[];
   Images: string[];
@@ -10,3 +10,5 @@ export type Project = {
   Link: string;
   Github: string;
 };
+
+export type Tags = "Static" | "Full-Stack" | "Frontend" | "Other";
