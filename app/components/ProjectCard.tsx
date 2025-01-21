@@ -1,5 +1,6 @@
 import { tools } from "@/data";
 import { IconBrandGithub, IconLink } from "@tabler/icons-react";
+import ToolBubble from "./ToolBubble";
 
 export interface Props {
   Project: {

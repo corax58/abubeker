@@ -11,12 +11,12 @@ const ContactMe = () => {
   return (
     <section
       id="contact-me"
-      className="mt-20  w-full flex flex-col items-center  px-4 md:px-16  xl:px-44  "
+      className="mt-20 mb-10  w-full flex flex-col items-center  px-4 md:px-16  xl:px-44  "
     >
       <div>
         <p className="text-3xl text-white  mb-10">Contact Me</p>
       </div>
-      <div className="bg-primary border border-third from-indigo-800 to-violet-800 text-white w-full h-max justify-center flex items-center flex-col space-y-8 md:space-y-4 font-light py-8 rounded-2xl  ">
+      <div className="  bg-gradient-to-r  from-[#00023a] via-primary  to-[#00023a]  border border-third  text-white w-full h-max justify-center flex items-center flex-col space-y-8 md:space-y-4 font-light py-8 rounded-2xl  ">
         <div className=" flex  flex-col md:flex-row  space-y-4 md:space-y-0 md:space-x-8 ">
           <div className=" flex space-x-2">
             <IconPhone />
