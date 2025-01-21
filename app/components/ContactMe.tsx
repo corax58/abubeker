@@ -6,7 +6,6 @@ import {
   IconMail,
   IconPhone,
 } from "@tabler/icons-react";
-import React from "react";
 
 const ContactMe = () => {
   return (

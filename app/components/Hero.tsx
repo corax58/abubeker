@@ -1,10 +1,6 @@
-import React from "react";
-import Glow from "./Glow";
-import ProfileImage from "../../public/profile.jpg";
-import Image from "next/image";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
-import { IconFileCv } from "@tabler/icons-react";
-import Link from "next/link";
+import Image from "next/image";
+import ProfileImage from "../../public/profile.jpg";
 
 const Hero = () => {
   return (

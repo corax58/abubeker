@@ -1,5 +1,4 @@
 import { tools } from "@/data";
-import React from "react";
 import ToolBubble from "./ToolBubble";
 
 const Toolset = () => {
@@ -12,6 +11,7 @@ const Toolset = () => {
       <div className=" flex gap-2 md:gap-10  flex-wrap items-center justify-between">
         {tools.map((tool) => (
           <ToolBubble
+            key={tool.id}
             name={tool.name}
             imageLink={tool.img}
             needRound={tool.needRound}

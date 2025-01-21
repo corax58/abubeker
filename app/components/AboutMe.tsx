@@ -1,10 +1,10 @@
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import Art from "@/public/art.png";
 import communication from "@/public/communication.svg";
-import FullImage from "@/public/fullimage2.jpg";
 import Globalization from "@/public/Globalization.png";
 import Image from "next/image";
 import CopyButton from "./CopyButton";
+
 const AboutMe = () => {
   const card = "rounded-xl border-third border   ";
   return (

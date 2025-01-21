@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Props {
   name: string;
   imageLink: string;
@@ -15,7 +13,7 @@ const ToolBubble = ({ name, imageLink, needRound }: Props) => {
         <img
           src={imageLink}
           className={`size-14  ${needRound == false ? "" : "rounded-full"}`}
-        ></img>{" "}
+        ></img>
       </div>
     </div>
   );
