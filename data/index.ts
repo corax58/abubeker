@@ -1,3 +1,5 @@
+import { Project } from "@/lib/types";
+
 export const tools = [
   {
     id: 0,
@@ -53,22 +55,11 @@ export const tools = [
   },
 ];
 
-export const ProjectsList: {
-  id: number;
-  Title: string;
-  Tags: "Static" | "Full-Stack" | "Frontend" | "Other";
-  Description: string;
-  Stack: number[];
-  Images: string[];
-  Details: string;
-  img: string;
-  Link: string;
-  Github: string;
-}[] = [
+export const ProjectsList: Project[] = [
   {
     id: 0,
     Title: "Fable Forge",
-    Tags: "Full-Stack",
+    Tag: "Full-Stack",
     Description:
       "Fable Forge lets you create interactive, branching **Choose Your Own Adventure** stories. Built with **Next.js** and **PostgreSQL** for a smooth user experience.",
     img: "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737405859/Projects/photo_1_2025-01-20_23-41-53_ahhfif.jpg",
@@ -118,7 +109,7 @@ Whether you're crafting a short story or an epic journey, Fable Forge offers the
   {
     id: 1,
     Title: "Optima",
-    Tags: "Full-Stack",
+    Tag: "Full-Stack",
     Description:
       "Comprehensive web app for tracking habits and managing projects. ",
     Stack: [3, 5, 6, 8],
@@ -170,7 +161,7 @@ Whether you're crafting a short story or an epic journey, Fable Forge offers the
   {
     id: 2,
     Title: "Pico",
-    Tags: "Full-Stack",
+    Tag: "Full-Stack",
     Description:
       "Pico is a MERN stack-based image sharing platform where users can post single or multiple images as albums. Its mobile responsive for seamless use across devices.",
     Stack: [3, 5, 6, 7],
@@ -211,7 +202,7 @@ Pico is a simple **image sharing platform** built with the **MERN stack**. Users
   {
     id: 3,
     Title: "Portfolio website",
-    Tags: "Frontend",
+    Tag: "Frontend",
     Description:
       "My portfolio Website is a sleek, modern platform built with Next.js and Tailwind CSS to showcase projects and skills. It's fast, responsive, and visually stunning.",
     Stack: [4],
@@ -248,7 +239,7 @@ Pico is a simple **image sharing platform** built with the **MERN stack**. Users
   {
     id: 4,
     Title: "Unique",
-    Tags: "Static",
+    Tag: "Static",
     Description:
       "Unique is a sleek, mobile-responsive car rental website featuring smooth Framer Motion animations. Built with React.js, TypeScript, and Vite, it ensures speed and style.",
     Details: `## Unique
@@ -296,7 +287,7 @@ Check out the live demo here: [Unique](https://unique-indol.vercel.app/)
   {
     id: 5,
     Title: "Camper",
-    Tags: "Static",
+    Tag: "Static",
     Description:
       "Camper is a sleek, mobile-responsive landing page for a travel agency. Built with React, it features a clean design and seamless user experience.",
     Stack: [3],
@@ -325,7 +316,7 @@ Explore Camper and see the design live: [Camper](https://camper-lime.vercel.app/
   {
     id: 6,
     Title: "Game dashboard",
-    Tags: "Frontend",
+    Tag: "Frontend",
     Description:
       "a Game Dashboard thats is a sleek, responsive interface for managing gaming data. Built with Next.js and Tailwind CSS, it ensures high performance and modern design.",
     Stack: [4],
@@ -351,7 +342,7 @@ Experience the dashboard live: [https://game-dashboard-rho.vercel.app/](https://
   {
     id: 7,
     Title: "Fakebook",
-    Tags: "Full-Stack",
+    Tag: "Full-Stack",
     Description:
       "A lightweight, mobile-responsive Facebook clone. It supports text-based posts, post searching, and account management, offering a simple and functional user experience. ",
     Stack: [3, 5, 6, 7],
@@ -392,7 +383,7 @@ Fakebook is a lightweight and mobile-responsive **Facebook clone** designed for 
   {
     id: 8,
     Title: "Anime Land",
-    Tags: "Frontend",
+    Tag: "Frontend",
     Description:
       "Anime Land is a mobile-responsive website for discovering anime. It features powerful search functionality and detailed information for anime enthusiasts.",
     Stack: [3],

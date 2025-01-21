@@ -8,6 +8,8 @@ export interface Props {
     Title: string;
     Description: string;
     Stack: number[];
+    Tag: "Static" | "Full-Stack" | "Frontend" | "Other";
+
     img: string;
     Link: string;
     Github: string;
@@ -15,10 +17,10 @@ export interface Props {
 }
 
 const ProjectCard = ({
-  Project: { id, Title, Description, Stack, img, Link, Github },
+  Project: { id, Title, Description, Stack, img, Link, Github, Tag },
 }: Props) => {
   return (
-    <div className=" h-max lg:h-[300px]  flex flex-col items-center lg:flex-row gap-5 ease-in-out shadow-xl mb-10 text-white  w-full  bg-gradient-to-r  from-primary  to-[#00023a] border-third border  transition-all  rounded-lg p-4 space-y-2">
+    <div className=" h-max lg:h-[300px]  flex flex-col items-center lg:flex-row gap-5 ease-in-out shadow-xl mb-10 text-white  w-full bg-gradient-to-b lg:bg-gradient-to-r  from-primary  to-[#00023a] border-third border  transition-all  rounded-lg p-4 space-y-2">
       <a
         href={`/projects/${id}`}
         className=" w-full h-max bg-blue-900 rounded-md"
@@ -37,7 +39,10 @@ const ProjectCard = ({
           <div className="  h-px bg-secondary w-full"></div>
           <p className=" w-full font-extralight  line-clamp-4">{Description}</p>
         </div>
-        <div className=" flex flex-col mt-5 gap-2">
+        <div className=" border rounded-full w-max text-sm px-2 mt-1">
+          {Tag}
+        </div>
+        <div className=" flex flex-col mt-3 gap-2">
           <div className=" flex w-full flex-wrap  -space-x-3  ">
             {Stack.map((id, i) => (
               <div className="z-10 hover:z-20  shadow-2xl hover:scale-110 transition-all  h-min bg-primary border-third border rounded-full p-2 overflow-clip">
