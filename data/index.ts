@@ -53,6 +53,11 @@ export const tools = [
     name: "Mysql",
     img: "../Icons/mysql.svg",
   },
+  {
+    id: 10,
+    name: "Tailwind",
+    img: "../Icons/tailwind.svg",
+  },
 ];
 
 export const ProjectsList: Project[] = [
@@ -63,7 +68,7 @@ export const ProjectsList: Project[] = [
     Description:
       "Fable Forge lets you create interactive, branching **Choose Your Own Adventure** stories. Built with **Next.js** and **PostgreSQL** for a smooth user experience.",
     img: "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737405859/Projects/photo_1_2025-01-20_23-41-53_ahhfif.jpg",
-    Stack: [4, 8],
+    Stack: [4, 10, 8],
     Link: "https://fable-forge-two.vercel.app/",
     Github: "https://github.com/corax58/fable-forge",
     Details: `## **Fable Forge** 🌟
@@ -112,7 +117,7 @@ Whether you're crafting a short story or an epic journey, Fable Forge offers the
     Tag: "Full-Stack",
     Description:
       "Comprehensive web app for tracking habits and managing projects. ",
-    Stack: [3, 5, 6, 8],
+    Stack: [3, 5, 10, 6, 8],
 
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737396519/Projects/photo_5_2025-01-20_21-07-40_mvqwmx.jpg",
@@ -164,7 +169,7 @@ Whether you're crafting a short story or an epic journey, Fable Forge offers the
     Tag: "Full-Stack",
     Description:
       "Pico is a MERN stack-based image sharing platform where users can post single or multiple images as albums. Its mobile responsive for seamless use across devices.",
-    Stack: [3, 5, 6, 7],
+    Stack: [3, 5, 6, 10, 7],
     Details: `## **Pico** 📸
 
 **[Live Demo](https://pico-self-five.vercel.app/)** | **[GitHub](https://github.com/corax58/Pico)**
@@ -205,7 +210,7 @@ Pico is a simple **image sharing platform** built with the **MERN stack**. Users
     Tag: "Frontend",
     Description:
       "My portfolio Website is a sleek, modern platform built with Next.js and Tailwind CSS to showcase projects and skills. It's fast, responsive, and visually stunning.",
-    Stack: [4],
+    Stack: [4, 10],
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737095267/Projects/7223fd79-965d-4368-b7e1-d4cdfa3e7c02.png",
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737095303/Projects/db7d609f-b324-485f-8496-e10bd51f0492.png",
@@ -273,7 +278,7 @@ Pico is a simple **image sharing platform** built with the **MERN stack**. Users
 ## Live Demo
 Check out the live demo here: [Unique](https://unique-indol.vercel.app/)
 `,
-    Stack: [3, 6],
+    Stack: [3, 10, 6],
     img: "../project_Pictures/unique.jpg",
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1736879444/Projects/6d74afa7-b050-433d-a6e8-1a36b163bf04.png",
@@ -290,7 +295,7 @@ Check out the live demo here: [Unique](https://unique-indol.vercel.app/)
     Tag: "Static",
     Description:
       "Camper is a sleek, mobile-responsive landing page for a travel agency. Built with React, it features a clean design and seamless user experience.",
-    Stack: [3],
+    Stack: [3, 10],
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737093605/Projects/a79b07cc-2dcd-4ce6-a0b8-173e9ef60803.png",
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737093651/Projects/3e496846-4536-4d03-9fe7-21baa4b2e356.png",
@@ -319,7 +324,7 @@ Explore Camper and see the design live: [Camper](https://camper-lime.vercel.app/
     Tag: "Frontend",
     Description:
       "a Game Dashboard thats is a sleek, responsive interface for managing gaming data. Built with Next.js and Tailwind CSS, it ensures high performance and modern design.",
-    Stack: [4],
+    Stack: [4, 10],
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737094298/Projects/23721121-172d-4aa7-a1db-94b628de99b3.png",
     ],
@@ -345,7 +350,7 @@ Experience the dashboard live: [https://game-dashboard-rho.vercel.app/](https://
     Tag: "Full-Stack",
     Description:
       "A lightweight, mobile-responsive Facebook clone. It supports text-based posts, post searching, and account management, offering a simple and functional user experience. ",
-    Stack: [3, 5, 6, 7],
+    Stack: [3, 5, 10, 6, 7],
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737095983/Projects/e62d62e9-0d12-4848-9aba-f9b877405ea2.png",
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737096023/Projects/f71634be-3aaf-43d8-bc47-362ce171db1e.png",
@@ -386,7 +391,7 @@ Fakebook is a lightweight and mobile-responsive **Facebook clone** designed for 
     Tag: "Frontend",
     Description:
       "Anime Land is a mobile-responsive website for discovering anime. It features powerful search functionality and detailed information for anime enthusiasts.",
-    Stack: [3],
+    Stack: [3, 10],
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737097038/Projects/ee9f98d0-3859-43c7-9e1f-c599808fdd6b.png",
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737097334/Projects/271bea18-773a-4db3-9fe6-8532de5711cb.png",

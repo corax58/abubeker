@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import Glow from "../components/Glow";
 import { ProjectsList } from "@/data";
+import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const ProjectsPage = () => {

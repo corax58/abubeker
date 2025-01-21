@@ -53,7 +53,7 @@ const AboutMe = () => {
         </div>
 
         <div
-          className={` ${card} col-span-1 bg-gradient-to-r from-violet-900 via-primary to-primary flex items-center flex-col h-full p-4`}
+          className={` ${card} col-span-1 bg-gradient-to-r from-violet-900  to-primary flex items-center flex-col h-full p-4`}
         >
           <div className="w-full ">
             Am flexible with time zone{" "}
@@ -68,7 +68,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div
-          className={`  ${card} col-span-1 md:col-span-2  h-64 bg-gradient-to-r  from-violet-900 via-primary to-primary flex  md:w-full   pt-4 pl-4`}
+          className={`  ${card} col-span-1 md:col-span-2  h-64 bg-gradient-to-r  from-violet-900  to-primary flex  md:w-full   pt-4 pl-4`}
         >
           <div className=" relative w-full items-end h-full">
             <div className=" absolute w-full h-full items-end  ">

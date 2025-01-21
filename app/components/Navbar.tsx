@@ -1,16 +1,15 @@
 "use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   Dispatch,
-  PropsWithChildren,
   ReactNode,
   SetStateAction,
   useEffect,
   useRef,
   useState,
 } from "react";
-import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [mouseChange, setMouseChange] = useState(false);
@@ -53,7 +52,7 @@ const Navbar = () => {
       <div className="h-full z-50 flex justify-center">
         <div
           onMouseLeave={() => setMouseChange(!mouseChange)}
-          className=" relative z-50 text-xs  md:text-base flex w-max items-center gap-2 p-4   rounded-full h-full  bg-black"
+          className=" relative z-50 text-xs  md:text-base flex w-max items-center gap-2 md:gap-4 p-4   rounded-full h-full  bg-black"
         >
           <Cursor position={position} />
           <Tab href="/" setPosition={setPosition} mouseChange={mouseChange}>
@@ -100,7 +99,12 @@ const Tab = ({
   const ref = useRef<HTMLAnchorElement>(null);
 
   const pathname = usePathname();
-  const hash = window.location.hash;
+  let hash = "";
+
+  if (typeof window !== "undefined") {
+    hash = window.location.hash; // Set hash safely on the client side.
+  }
+
   const location = pathname + hash;
 
   useEffect(() => {

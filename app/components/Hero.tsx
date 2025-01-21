@@ -12,7 +12,7 @@ const Hero = () => {
             <p> I&apos;m Abubeker,</p>
 
             <TypewriterEffect
-              className=" p-0 w-max text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white  dark:text-white "
+              className=" p-0 w-max text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white  dark:text-white "
               words={[{ text: "Web" }, { text: "Developer" }]}
             />
           </div>

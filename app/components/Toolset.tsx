@@ -8,7 +8,7 @@ const Toolset = () => {
         <p className=" text-3xl  text-white   h-min ">My Toolset</p>
       </div>
 
-      <div className=" flex gap-2 md:gap-10  flex-wrap items-center justify-between">
+      <div className=" flex gap-2 md:gap-10 lg:gap-5  flex-wrap items-center justify-center">
         {tools.map((tool) => (
           <ToolBubble
             key={tool.id}
