@@ -44,8 +44,11 @@ const ProjectCard = ({
         </div>
         <div className=" flex flex-col mt-3 gap-2">
           <div className=" flex w-full flex-wrap  -space-x-3  ">
-            {Stack.map((id, i) => (
-              <div className="z-10 hover:z-20  shadow-2xl hover:scale-110 transition-all  h-min bg-primary border-third border rounded-full p-2 overflow-clip">
+            {Stack.map((id) => (
+              <div
+                key={id}
+                className="z-10 hover:z-20  shadow-2xl hover:scale-110 transition-all  h-min bg-primary border-third border rounded-full p-2 overflow-clip"
+              >
                 <div className="relative ">
                   <div className=" w-full h-full flex ">
                     <div className="absolute w-4 h-4 blur-md  rounded-full bg-white   "></div>

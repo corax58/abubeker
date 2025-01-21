@@ -21,8 +21,8 @@ const ImageViewer = ({ images }: Props) => {
       <div className="bg-black ">
         <Carousel className="w-full relative h-min  ">
           <CarouselContent>
-            {images?.map((image) => (
-              <CarouselItem>
+            {images?.map((image, index) => (
+              <CarouselItem key={index}>
                 <img
                   src={image}
                   className=" h-full  md:max-h-96 lg:max-h-[450px]   w-full object-contain"
