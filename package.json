@@ -31,7 +31,8 @@
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.167.1",
-    "three-globe": "^2.31.1"
+    "three-globe": "^2.31.1",
+    "yet-another-react-lightbox": "^3.21.7"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
