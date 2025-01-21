@@ -1,10 +1,27 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import {
+  Dispatch,
+  PropsWithChildren,
+  ReactNode,
+  SetStateAction,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const [mouseChange, setMouseChange] = useState(false);
+
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [position, setPosition] = useState({
+    left: 0,
+    width: 0,
+    opacity: 0,
+  });
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
@@ -34,25 +51,101 @@ const Navbar = () => {
       }`}
     >
       <div className="h-full z-50 flex justify-center">
-        <div className=" z-50 text-xs font-bold md:text-base flex w-max items-center px-4 md:px-8 space-x-3 sm:space-x-5 md:space-x-10  rounded-full h-full  border-black border  bg-[#020617] text-white">
-          <Link
-            href={"/"}
-            className="hover:font-medium py-1 px-4 rounded-full text-black bg-white "
-          >
+        <div
+          onMouseLeave={() => setMouseChange(!mouseChange)}
+          className=" relative z-50 text-xs  md:text-base flex w-max items-center gap-2 p-4   rounded-full h-full  bg-black"
+        >
+          <Cursor position={position} />
+          <Tab href="/" setPosition={setPosition} mouseChange={mouseChange}>
             Home
-          </Link>
-          <Link href={"/projects"} className="hover:font-medium ">
+          </Tab>
+          <Tab
+            href="/projects"
+            setPosition={setPosition}
+            mouseChange={mouseChange}
+          >
             Projects
-          </Link>
-          <Link href={"/#about-me"} className="hover:font-medium ">
+          </Tab>
+          <Tab
+            href="/#about-me"
+            setPosition={setPosition}
+            mouseChange={mouseChange}
+          >
             About me
-          </Link>
-          <Link href={"/#contact-me"} className="hover:font-medium ">
+          </Tab>
+          <Tab
+            href="/#contact-me"
+            setPosition={setPosition}
+            mouseChange={mouseChange}
+          >
             Contact me
-          </Link>
+          </Tab>
         </div>
       </div>
     </nav>
+  );
+};
+
+const Tab = ({
+  children,
+  setPosition,
+  href,
+  mouseChange,
+}: {
+  href: string;
+  setPosition: Dispatch<SetStateAction<any>>;
+  children: ReactNode;
+  mouseChange: boolean;
+}) => {
+  const ref = useRef<HTMLAnchorElement>(null);
+
+  const pathname = usePathname();
+  const hash = window.location.hash;
+  const location = pathname + hash;
+
+  useEffect(() => {
+    if (location == href && ref.current) {
+      const { width } = ref.current.getBoundingClientRect();
+      setPosition({
+        width: width + 10,
+        opacity: 1,
+        left: ref.current.offsetLeft - 5,
+      });
+    }
+  }, [mouseChange]);
+  return (
+    <Link
+      href={href}
+      ref={ref}
+      onMouseEnter={() => {
+        if (!ref.current) return;
+
+        const { width } = ref.current.getBoundingClientRect();
+        setPosition({
+          width: width + 10,
+          opacity: 1,
+          left: ref.current.offsetLeft - 5,
+        });
+      }}
+      className={
+        " z-10 block cursor-pointer uppercase text-white mix-blend-difference "
+      }
+    >
+      {children}
+    </Link>
+  );
+};
+
+const Cursor = ({
+  position,
+}: {
+  position: { left: number; width: number; opacity: number };
+}) => {
+  return (
+    <motion.div
+      animate={position}
+      className="absolute z-0 h-8   rounded-full bg-white"
+    />
   );
 };
 
