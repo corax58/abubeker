@@ -1,6 +1,8 @@
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Image from "next/image";
 import ProfileImage from "../../public/profile.jpg";
+import Link from 'next/link';
+
 
 const Hero = () => {
   return (
