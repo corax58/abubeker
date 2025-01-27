@@ -66,7 +66,7 @@ export const ProjectsList: Project[] = [
     Title: "Fable Forge",
     Tag: "Full-Stack",
     Description:
-      "Fable Forge lets you create interactive, branching **Choose Your Own Adventure** stories. Built with **Next.js** and **PostgreSQL** for a smooth user experience.",
+      "Fable Forge lets you create interactive, branching Choose Your Own Adventure stories. Built with Next.js and PostgreSQL for a smooth user experience.",
     img: "https://res.cloudinary.com/dkka6f7kc/image/upload/v1737405859/Projects/photo_1_2025-01-20_23-41-53_ahhfif.jpg",
     Stack: [4, 10, 8],
     Link: "https://fable-forge-two.vercel.app/",
@@ -158,7 +158,7 @@ Whether you're crafting a short story or an epic journey, Fable Forge offers the
 - **Hosting**: Vercel  
 `,
 
-    img: "../project_Pictures/optima.png",
+    img: "/project_Pictures/optima.png",
     Link: "https://optima-jet.vercel.app/",
     Github: "https://github.com/corax58/Optima",
   },
@@ -237,7 +237,7 @@ Pico is a simple **image sharing platform** built with the **MERN stack**. Users
 [![Portfolio Link](https://img.shields.io/badge/Visit-Portfolio-blue?style=for-the-badge)](https://abubeker-portfolio.vercel.app/)
 
 `,
-    img: "../project_Pictures/portfolio.png",
+    img: "/project_Pictures/portfolio.png",
     Link: "https://abubeker-portfolio.vercel.app/",
     Github: "https://github.com/corax58/abubeker",
   },
@@ -279,7 +279,7 @@ Pico is a simple **image sharing platform** built with the **MERN stack**. Users
 Check out the live demo here: [Unique](https://unique-indol.vercel.app/)
 `,
     Stack: [3, 10, 6],
-    img: "../project_Pictures/unique.jpg",
+    img: "/project_Pictures/unique.jpg",
     Images: [
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1736879444/Projects/6d74afa7-b050-433d-a6e8-1a36b163bf04.png",
       "https://res.cloudinary.com/dkka6f7kc/image/upload/v1736879501/Projects/ff30dcff-38fa-4f6d-b357-aaa3369da56f.png",
@@ -313,7 +313,7 @@ Key Features:
 - **React-Powered**: Built with React for a dynamic and efficient front-end experience.  
 
 Explore Camper and see the design live: [Camper](https://camper-lime.vercel.app/)`,
-    img: "../project_Pictures/camper.jpg",
+    img: "/project_Pictures/camper.jpg",
     Link: "https://camper-lime.vercel.app/",
     Github: "https://github.com/corax58/Camper",
   },
@@ -339,7 +339,7 @@ Key Features:
 - **Responsive Layout**: Styled with Tailwind CSS, ensuring usability across all devices.  
 
 Experience the dashboard live: [https://game-dashboard-rho.vercel.app/](https://game-dashboard-rho.vercel.app/)`,
-    img: "../project_Pictures/game_dashboard.png",
+    img: "/project_Pictures/game_dashboard.png",
     Link: "https://game-dashboard-rho.vercel.app/",
     Github: "https://github.com/corax58/ui-test",
   },
@@ -381,7 +381,7 @@ Fakebook is a lightweight and mobile-responsive **Facebook clone** designed for 
 🎯 **Explore Now**:  
 [![Fakebook Link](https://img.shields.io/badge/Visit-Fakebook-blue?style=for-the-badge)](https://fakebook-ten-ruddy.vercel.app/)
 `,
-    img: "../project_Pictures/fakebook.png",
+    img: "/project_Pictures/fakebook.png",
     Link: "https://fakebook-ten-ruddy.vercel.app/",
     Github: "https://github.com/corax58/fakebook",
   },
@@ -414,7 +414,7 @@ Fakebook is a lightweight and mobile-responsive **Facebook clone** designed for 
 
 🎯 **Explore the World of Anime** and enjoy a rich browsing experience tailored for anime lovers.
 `,
-    img: "../project_Pictures/animeland.png",
+    img: "/project_Pictures/animeland.png",
     Link: "https://animeland-pink.vercel.app/",
     Github: "https://github.com/corax58/animeland",
   },

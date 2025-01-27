@@ -6,7 +6,7 @@ import Glow from "./components/Glow";
 
 export const metadata: Metadata = {
   title: "Abubeker's Portfolio",
-  description: "Web developer Portfolio website",
+  description: "My portfolio website where i showcase my latest projects",
 };
 
 const poppins = localFont({

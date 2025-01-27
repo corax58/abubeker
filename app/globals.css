@@ -36,6 +36,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .bg-noise {
+    background-image: url("/public/grain.jpg"); /* Replace with your noise texture path */
+    background-repeat: repeat;
+    background-size: 150px; /* Adjust size for intensity */
+  }
 }
 
 @layer base {

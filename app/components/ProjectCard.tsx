@@ -1,5 +1,6 @@
 import { tools } from "@/data";
 import { IconBrandGithub, IconLink } from "@tabler/icons-react";
+import Image from "next/image";
 
 export interface Props {
   Project: {
@@ -20,14 +21,15 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <div className=" h-max lg:h-[300px]  flex flex-col items-center lg:flex-row gap-5 ease-in-out shadow-xl mb-10 text-white  w-full bg-gradient-to-b lg:bg-gradient-to-r  from-primary  to-[#00023a] border-third border  transition-all  rounded-lg p-4 space-y-2">
-      <a
-        href={`/projects/${id}`}
-        className=" w-full h-max bg-blue-900 rounded-md"
-      >
-        <img
+      <a href={`/projects/${id}`} className=" w-full h-max  rounded-md">
+        <Image
           src={img}
           alt="project image"
-          className="rounded-md  h-44 md:h-64  w-full  transition-all  object-cover "
+          className="rounded-md transition-all object-cover"
+          width={1024} // Adjust width based on your needs
+          height={640} // Adjust height based on your needs
+          sizes="(max-width: 768px) 100vw, 50vw" // Adjust for responsive sizing
+          priority // Optional: prioritize loading for important images
         />
       </a>
       <div className=" flex flex-col w-full h-full justify-between ">

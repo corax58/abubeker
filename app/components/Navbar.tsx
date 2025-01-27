@@ -21,28 +21,7 @@ const Navbar = () => {
     width: 0,
     opacity: 0,
   });
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        // If we are scrolling down, hide the navbar
-        setIsVisible(false);
-      } else {
-        // If we are scrolling up, show the navbar
-        setIsVisible(true);
-      }
-      setLastScrollY(window.scrollY);
-    }
-  };
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [lastScrollY, controlNavbar]);
   return (
     <nav
       className={`fixed w-full  h-12 mt-2 z-50 transition-all duration-300 ${
@@ -52,7 +31,7 @@ const Navbar = () => {
       <div className="h-full z-50 flex justify-center">
         <div
           onMouseLeave={() => setMouseChange(!mouseChange)}
-          className=" relative z-50 text-xs  md:text-base flex w-max items-center gap-2 md:gap-4 p-4   rounded-full h-full  bg-black"
+          className=" relative z-50 text-xs  md:text-base flex w-max items-center gap-2 md:gap-4 p-4   rounded-full h-full  border-third border-2 backdrop-blur-xl bg-primary bg-opacity-50 backdrop"
         >
           <Cursor position={position} />
           <Tab href="/" setPosition={setPosition} mouseChange={mouseChange}>
@@ -111,9 +90,9 @@ const Tab = ({
     if (location == href && ref.current) {
       const { width } = ref.current.getBoundingClientRect();
       setPosition({
-        width: width + 10,
+        width: width + 16,
         opacity: 1,
-        left: ref.current.offsetLeft - 5,
+        left: ref.current.offsetLeft - 8,
       });
     }
   }, [mouseChange]);
@@ -131,9 +110,7 @@ const Tab = ({
           left: ref.current.offsetLeft - 5,
         });
       }}
-      className={
-        " z-10 block cursor-pointer uppercase text-white mix-blend-difference "
-      }
+      className={" z-10 block cursor-pointer  text-white mix-blend-difference "}
     >
       {children}
     </Link>
