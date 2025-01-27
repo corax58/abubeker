@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="h-full z-50 flex justify-center">
         <div
           onMouseLeave={() => setMouseChange(!mouseChange)}
-          className=" relative z-50 text-xs  md:text-base flex w-max items-center gap-2 md:gap-4 p-4   rounded-full h-full  border-third border-2 backdrop-blur-xl bg-primary bg-opacity-50 backdrop"
+          className=" relative z-50 text-xs  md:text-base flex w-max items-center gap-2 md:gap-4 p-4   rounded-full h-full  border-third border-2 backdrop-blur-lg bg-primary bg-opacity-50 backdrop"
         >
           <Cursor position={position} />
           <Tab href="/" setPosition={setPosition} mouseChange={mouseChange}>
