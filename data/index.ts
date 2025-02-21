@@ -57,7 +57,19 @@ export const tools = [
     id: 10,
     name: "Tailwind",
     img: "../Icons/tailwind.svg",
+  }, {
+    id: 11,
+    name: "React Query",
+    img: "../Icons/react-query.svg",
+  }, {
+    id: 12,
+    name: "Redux",
+    img: "../Icons/redux.svg",
   },
+
+
+
+  
 ];
 
 export const ProjectsList: Project[] = [
