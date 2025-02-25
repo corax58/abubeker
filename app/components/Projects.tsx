@@ -20,11 +20,12 @@ const Projects = () => {
         </div>
       </div>
       <div>
-        <a
-          href="/projects"
-          className=" bg-primary hover:bg-secondary transition-colors border-secondary border text-white font-light px-4 py-2 rounded-md"
-        >
-          More Projects
+        <a href="/projects">
+          <div className="  border-[#142266] bg-[#142266] border-t-2 border rounded-lg ">
+            <div className="to-[#101c53] bg-gradient-to-b rounded-lg hover:from-[#101c53] hover:to-[#182879] transition-colors duration-1000 from-[#182879] border-[#2741c5] border-[1.5px] border-t-0  px-5 py-2 text-white font-medium">
+              More Projects
+            </div>
+          </div>
         </a>
       </div>
     </section>
