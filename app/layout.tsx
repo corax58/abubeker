@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={poppins.className}>
         <div className=" fixed top-0 w-screen -z-50 h-screen">
           <div className="h-screen w-sreen   bg-dot-violet-600/[0.2]  relative flex items-center justify-center"></div>
