@@ -1,4 +1,4 @@
-# 🚀 Abubeker Abduljelil - Portfolio
+# 🚀 Abubeker Abduljelil
 
 Welcome to my **personal portfolio website**, where I showcase my projects, skills, and experience as a **front-end developer**. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**, this site highlights my expertise in modern web development.
 
@@ -22,6 +22,3 @@ Welcome to my **personal portfolio website**, where I showcase my projects, skil
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Framer Motion
 - **Deployment:** Vercel
 - **Tools & Libraries:** ESLint, Prettier, React Icons
-
-
-
